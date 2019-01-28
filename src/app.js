@@ -8,7 +8,7 @@ const util = require('util');
 function doc(args = {}) {
   const params = {...config, ...args};
   const filePath = path.join(__dirname, 'template/doc/template.mdx');
-  const writeFilePath = path.join(params.dir, params.name);
+  const writeFilePath = path.join(params.dir, params.file);
 
   fs.readFile(filePath, { encoding: 'utf8' }, function(err, data) {
     let cw = null;
@@ -36,4 +36,4 @@ module.exports = {
   doc: doc,
 }
 
-"".repl
+doc();

@@ -9,18 +9,19 @@ var app = require('../src/app');
 yargs.command('doc', 'create doc mdx', (argv) => {
   app.doc(argv.argv);
 })
-.option('n', {
-  alias: 'name',
+
+.option('f', {
+  alias: 'file',
   demand: false,
   default: 'index.mdx',
   describe: '创建的文件名',
   type: 'string',
 })
-.option('d', {
-  alias: 'dir',
+.option('n', {
+  alias: 'name',
   demand: false,
-  default: process.cwd(),
-  describe: '文件目录地址',
+  default: 'Component',
+  describe: '组件名',
   type: 'string',
 })
 .option('m', {
@@ -30,6 +31,14 @@ yargs.command('doc', 'create doc mdx', (argv) => {
   describe: '文档菜单',
   type: 'string',
 })
+.option('d', {
+  alias: 'dir',
+  demand: false,
+  default: process.cwd(),
+  describe: '文件目录地址',
+  type: 'string',
+})
+
 .usage('Usage: zc doc [options]')
 .example('zc doc -n index.mdx -d ./ -m other', '创建zet-component文档')
 .help('h')
