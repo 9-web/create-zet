@@ -1,0 +1,28 @@
+{
+  "name": "create-zet",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cz": "./bin/www.js",
+    "create-zet": "./bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9-web/create-zet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9-web/create-zet/issues"
+  },
+  "homepage": "https://github.com/9-web/create-zet#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "yargs": "^12.0.5"
+  }
+}
