@@ -1,5 +1,5 @@
 ### create zet 脚手架
-zet-component 通过 create-zet 提供脚手架能力，包含：
+zet-component 通过 [create-zet](https://github.com/9-web/create-zet) 提供脚手架能力，包含：
 * zc doc 快速生成文档模板
 
 ### 安装
@@ -8,7 +8,7 @@ zet-component 通过 create-zet 提供脚手架能力，包含：
 ```
 
 ### 使用
-* cz doc --name index.mdx --root /usr/bin --menu resource
+* `cz doc --name index.mdx --root /usr/bin --menu resource`
 
 
 ### 参数
