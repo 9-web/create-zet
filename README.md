@@ -4,7 +4,7 @@ zet-component 通过 [create-zet](https://github.com/9-web/create-zet) 提供脚
 
 ### 安装
 ```
-(yarn || npm) install create-zet
+(yarn || npm) install create-zet -g
 ```
 
 ### 使用
