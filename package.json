@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "changelog": "git add ./ && git commit -m 'update CHANGELOG.md'",
+    "publish": "np --no-cleanup --yolo --no-publish",
     "prepublishOnly": "npm run changelog && np --no-cleanup --yolo --no-publish"
   },
   "bin": {
